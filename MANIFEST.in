@@ -1,0 +1,367 @@
+# Revitron UI Enhancement Framework - Package Manifest
+# Version 2.0 (Self-Reflection Integrated)
+#
+# This file specifies which files should be included in the source distribution
+# when building the package for PyPI or other distribution channels.
+
+# =============================================================================
+# Documentation Files
+# =============================================================================
+
+# Core documentation
+include README.md
+include CHANGELOG.md  
+include CONTRIBUTING.md
+include LICENSE
+
+# Documentation directory
+recursive-include docs *.md
+recursive-include docs *.rst
+recursive-include docs *.txt
+
+# =============================================================================
+# Configuration Files  
+# =============================================================================
+
+# Configuration directory and files
+recursive-include config *.yaml
+recursive-include config *.yml
+recursive-include config *.json
+recursive-include config *.toml
+
+# Package configuration
+include pyproject.toml
+include setup.py
+include setup.cfg
+
+# =============================================================================
+# Source Code and Framework Components
+# =============================================================================
+
+# Main source directory
+recursive-include src *.py
+recursive-include src *.yaml
+recursive-include src *.yml
+recursive-include src *.json
+
+# Main controller
+include main_controller.py
+
+# Requirements and dependencies
+include requirements.txt
+include requirements-dev.txt
+include requirements-test.txt
+
+# =============================================================================
+# Test Files and Test Data
+# =============================================================================
+
+# Test directory (for development installations)
+recursive-include tests *.py
+recursive-include tests *.yaml
+recursive-include tests *.yml
+recursive-include tests *.json
+
+# Test data and fixtures
+recursive-include tests/fixtures *.json
+recursive-include tests/fixtures *.yaml
+recursive-include tests/mock_data *.json
+
+# =============================================================================
+# Data Files and Resources
+# =============================================================================
+
+# Data directory
+recursive-include data *.json
+recursive-include data *.yaml
+recursive-include data *.csv
+recursive-include data *.xml
+
+# API mappings and reference data
+include data/revitron_api_mapping.json
+include data/pyrevit_api_mapping.json  
+include data/custom_exclusions.yaml
+
+# Templates and examples
+recursive-include templates *.py
+recursive-include templates *.yaml
+recursive-include examples *.py
+recursive-include examples *.yaml
+
+# =============================================================================
+# Build and Development Files
+# =============================================================================
+
+# Tox configuration
+include tox.ini
+
+# Pre-commit hooks
+include .pre-commit-config.yaml
+
+# EditorConfig
+include .editorconfig
+
+# GitHub workflows and templates
+recursive-include .github *.yml
+recursive-include .github *.yaml
+recursive-include .github *.md
+
+# =============================================================================
+# Deployment and Operations Files
+# =============================================================================
+
+# Docker files
+include Dockerfile
+include docker-compose.yml
+include .dockerignore
+
+# Kubernetes manifests
+recursive-include k8s *.yaml
+recursive-include k8s *.yml
+
+# Deployment scripts
+recursive-include deployment *.sh
+recursive-include deployment *.py
+recursive-include deployment *.yaml
+
+# =============================================================================
+# Log Configuration and Examples
+# =============================================================================
+
+# Logging configuration examples
+recursive-include logs *.yaml
+recursive-include logs *.json
+include logs/.gitkeep
+
+# =============================================================================
+# Performance and Monitoring
+# =============================================================================
+
+# Performance configuration
+recursive-include performance *.yaml
+recursive-include performance *.json
+
+# Monitoring configuration
+recursive-include monitoring *.yaml
+recursive-include monitoring *.json
+
+# =============================================================================
+# Exclude Patterns
+# =============================================================================
+
+# Exclude compiled Python files
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.pyd
+global-exclude __pycache__
+global-exclude *.so
+
+# Exclude development and temporary files
+global-exclude .DS_Store
+global-exclude .coverage
+global-exclude .pytest_cache
+global-exclude .mypy_cache
+global-exclude .tox
+global-exclude htmlcov
+global-exclude *.egg-info
+
+# Exclude IDE files
+global-exclude .vscode
+global-exclude .idea
+global-exclude *.sublime-*
+
+# Exclude backup and temporary files
+global-exclude *~
+global-exclude *.bak
+global-exclude *.tmp
+global-exclude *.temp
+
+# Exclude log files
+global-exclude *.log
+
+# Exclude build artifacts
+global-exclude build
+global-exclude dist
+
+# Exclude version control
+global-exclude .git
+global-exclude .gitignore
+global-exclude .gitattributes
+
+# Exclude OS-specific files
+global-exclude Thumbs.db
+global-exclude Desktop.ini
+
+# Exclude user-specific configurations
+exclude config/local_config.yaml
+exclude config/user_config.yaml
+exclude .env
+exclude .env.*
+
+# Exclude test outputs and temporary files
+global-exclude test_*.log
+global-exclude coverage_*.xml
+global-exclude *.coverage
+
+# Exclude large datasets and generated content
+global-exclude generated_*
+global-exclude output_*
+global-exclude cache_*
+
+# =============================================================================
+# Framework-Specific Inclusions
+# =============================================================================
+
+# Framework metadata
+include VERSION
+include AUTHORS
+include CREDITS
+
+# API documentation generated files
+recursive-include api_docs *.html
+recursive-include api_docs *.css
+recursive-include api_docs *.js
+
+# Validation schemas
+recursive-include schemas *.json
+recursive-include schemas *.yaml
+
+# Quality assurance data
+recursive-include quality *.yaml
+recursive-include quality *.json
+
+# Implementation templates
+recursive-include implementation_templates *.py
+recursive-include implementation_templates *.md
+
+# =============================================================================
+# Self-Reflection Integration Files (v2.0)
+# =============================================================================
+
+# Self-reflection improvement data
+include self_reflection_improvements.json
+include critical_issues_addressed.yaml
+include performance_benchmarks.json
+
+# Quality metrics and tracking
+recursive-include quality_metrics *.json
+recursive-include quality_metrics *.yaml
+
+# Validation coverage reports
+recursive-include validation_reports *.json
+recursive-include validation_reports *.html
+
+# Research completeness data
+recursive-include research_data *.json
+recursive-include research_data *.yaml
+
+# =============================================================================
+# Internationalization and Localization
+# =============================================================================
+
+# Translation files
+recursive-include locale *.po
+recursive-include locale *.mo
+recursive-include locale *.pot
+
+# Language-specific documentation
+recursive-include docs/locales *.md
+recursive-include docs/locales *.rst
+
+# =============================================================================
+# Security and Compliance
+# =============================================================================
+
+# Security policies and procedures
+include SECURITY.md
+include CODE_OF_CONDUCT.md
+
+# Compliance documentation
+recursive-include compliance *.md
+recursive-include compliance *.yaml
+
+# Audit trails and logs (examples only)
+recursive-include audit_examples *.json
+recursive-include audit_examples *.yaml
+
+# =============================================================================
+# Performance Optimization Files
+# =============================================================================
+
+# Performance tuning configurations
+recursive-include performance_tuning *.yaml
+recursive-include performance_tuning *.json
+
+# Benchmark data and results
+recursive-include benchmarks *.json
+recursive-include benchmarks *.yaml
+recursive-include benchmarks *.py
+
+# Profiling configurations
+recursive-include profiling *.py
+recursive-include profiling *.yaml
+
+# =============================================================================
+# Integration and Plugin Support
+# =============================================================================
+
+# Plugin interfaces and examples
+recursive-include plugins *.py
+recursive-include plugins *.yaml
+
+# Integration examples
+recursive-include integrations *.py
+recursive-include integrations *.yaml
+recursive-include integrations *.json
+
+# API client libraries
+recursive-include client_libs *.py
+recursive-include client_libs *.js
+recursive-include client_libs *.md
+
+# =============================================================================
+# Backup and Recovery
+# =============================================================================
+
+# Backup configuration examples
+recursive-include backup_configs *.yaml
+recursive-include backup_configs *.sh
+
+# Recovery procedures documentation
+recursive-include recovery *.md
+recursive-include recovery *.yaml
+
+# =============================================================================
+# Version-Specific Files
+# =============================================================================
+
+# Version 2.0 specific enhancements
+include v2_improvements.md
+include self_reflection_report.json
+include performance_comparison.yaml
+
+# Migration guides and scripts
+recursive-include migration *.py
+recursive-include migration *.md
+recursive-include migration *.yaml
+
+# Upgrade procedures
+recursive-include upgrade *.sh
+recursive-include upgrade *.md
+recursive-include upgrade *.yaml
+
+# =============================================================================
+# End of Manifest
+# =============================================================================
+
+# Note: This manifest ensures comprehensive inclusion of all framework
+# components while excluding development artifacts and sensitive files.
+# 
+# The v2.0 Self-Reflection Integrated version includes enhanced file
+# organization and comprehensive coverage of all framework components
+# addressing the critical issues identified in the self-reflection analysis.
+#
+# Framework Vision: A production-ready system that enables AEC professionals
+# to systematically enhance Revitron UI with validated, implementable button
+# suggestions backed by comprehensive technical specifications and quality
+# assurance.

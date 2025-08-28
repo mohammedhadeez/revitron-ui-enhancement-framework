@@ -1,0 +1,93 @@
+# Revitron UI Enhancement Framework Dependencies
+# ==============================================
+# Production-ready dependencies for comprehensive framework system
+
+# Core Python Libraries
+requests>=2.28.0              # HTTP library for API access
+beautifulsoup4>=4.11.0         # HTML parsing for documentation scraping
+selenium>=4.8.0               # Web browser automation for comprehensive research
+pytest>=7.2.0                 # Testing framework
+pytest-cov>=4.0.0            # Coverage testing
+
+# Data Processing & Analysis
+pandas>=1.5.0                # Data manipulation and analysis
+numpy>=1.23.0                # Numerical computing
+pyyaml>=6.0                   # YAML configuration file support
+jinja2>=3.1.0                # Template engine for code generation
+
+# Async & Web Operations
+aiohttp>=3.8.0               # Async HTTP client/server
+urllib3>=1.26.0              # HTTP library with connection pooling
+
+# Code Analysis & AST Processing
+ast-tools>=0.1.0             # AST manipulation tools
+inspect2>=0.1.0              # Enhanced inspection capabilities
+
+# Documentation & Report Generation
+markdown>=3.4.0              # Markdown processing
+markdown-extensions>=0.1.0    # Extended markdown functionality
+tabulate>=0.9.0              # Table formatting for reports
+
+# Quality Assurance & Code Standards
+black>=22.10.0               # Code formatter
+flake8>=5.0.0               # Linting
+mypy>=0.991                 # Static type checking
+bandit>=1.7.0               # Security linting
+
+# Logging & Monitoring
+structlog>=22.3.0           # Structured logging
+rich>=12.6.0                # Rich text and beautiful formatting in terminal
+colorama>=0.4.0             # Cross-platform colored terminal text
+
+# Configuration & CLI
+pydantic>=1.10.0            # Data validation using Python type hints
+typer>=0.7.0                # Building CLI applications
+click>=8.1.0                # Command line interface creation kit
+
+# Testing & Quality
+hypothesis>=6.61.0          # Property-based testing
+factory-boy>=3.2.0          # Test data generation
+coverage>=7.0.0             # Code coverage measurement
+
+# Development & Productivity Tools
+ipython>=8.7.0              # Enhanced interactive Python shell
+jupyter>=1.0.0              # Interactive computing environment
+notebook>=6.5.0             # Jupyter notebook
+
+# Data Validation & Serialization
+marshmallow>=3.19.0         # Object serialization/deserialization
+cerberus>=1.3.0             # Lightweight data validation
+
+# Performance & Optimization  
+cachetools>=5.2.0           # Extensible memoizing collections and decorators
+joblib>=1.2.0               # Lightweight pipelining in Python
+
+# File & Path Operations
+pathlib2>=2.3.0             # Object-oriented filesystem paths (if needed)
+
+# Optional: Revit API Integration (when available in Revit environment)
+# ironpython>=3.4.0          # Uncomment when working in Revit environment
+# pythonnet>=3.0.0           # .NET integration for Revit API access
+
+# Optional: Advanced Analysis (install separately if needed)
+# scikit-learn>=1.1.0        # Machine learning for pattern analysis
+# networkx>=2.8.0            # Network analysis for relationship mapping
+# plotly>=5.11.0             # Interactive plotting for data visualization
+
+# Development Dependencies (install with pip install -e ".[dev]")
+[dev]
+pre-commit>=2.20.0          # Git hooks for quality checks
+tox>=4.0.0                  # Testing across multiple Python versions
+sphinx>=5.0.0               # Documentation generation
+sphinx-rtd-theme>=1.0.0     # ReadTheDocs theme for Sphinx
+
+# Testing Dependencies (install with pip install -e ".[test]")
+[test]
+pytest-xdist>=3.0.0        # Parallel testing
+pytest-mock>=3.10.0        # Mocking for tests
+pytest-timeout>=2.1.0      # Timeout for long-running tests
+
+# Documentation Dependencies (install with pip install -e ".[docs]")
+[docs]
+mkdocs>=1.4.0              # Static site generator
+mkdocs-material>=8.5.0     # Material theme for MkDocs
